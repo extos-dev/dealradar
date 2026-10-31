@@ -1,0 +1,17 @@
+---
+import '../styles/global.css';
+const { title = 'DealRadar' } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    </head>
+  <body>
+    <header><a href="/">DealRadar</a> <nav><a href="/deals/">Deals</a> <a href="/must-have/">Must Have</a> <a href="/trending/">Trending</a> <a href="/about/">About</a></nav></header>
+    <main><slot /></main>
+    <footer><p>As an Amazon Affiliate, I earn from qualifying purchases.</p></footer>
+  </body>
+</html>
